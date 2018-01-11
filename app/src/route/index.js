@@ -31,7 +31,10 @@ function compareHash(hashtest, callback){
   
   
 }
-
+// TODO route pour modifier le user authentifier:
+/* Faut recuperer le token du header : req.get('token'),
+chercher dans les user quel user a un hash qui est similaire (compareHash fait ca donc tu peux t'en inspirer),
+et modifier le user avec les données envoyer si le user existe */
 
 mongoose.connect(mongoDB, {
   useMongoClient: true
@@ -256,7 +259,7 @@ app.post('/group/register', function(req, res){
   var token = req.get('token');
   compareHash(token, function(hashOk){
     if(hashOk){
-      Group.findOne({title: req.body.title}, function(err, group){
+      Group.findOne({title: req.body.title, deleted: false}, function(err, group){
         if(err){
           res.send(err);
         }
