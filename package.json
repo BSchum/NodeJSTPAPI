@@ -1,0 +1,19 @@
+{
+  "name": "zelos",
+  "version": "1.0.0",
+  "description": "api",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "crypto": "^1.0.1",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pandipanda",
+  "license": "ISC"
+}
