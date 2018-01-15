@@ -14,9 +14,9 @@ var user = mongoose.Schema({
     type: String,
   },
   group: [{type:mongoose.Schema.Types.ObjectId, ref: 'Group',  default: []}],
-  adress: [{
+  address: [{
     type:mongoose.Schema.Types.ObjectId,
-    ref: 'Adress',
+    ref: 'Address',
     default: []}],
     deleted: Boolean
   });

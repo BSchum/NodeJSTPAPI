@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-var adress = mongoose.Schema({
-  adress: {
+var address = mongoose.Schema({
+  address: {
     type: String,
     index: {
       unique: true
@@ -9,4 +9,4 @@ var adress = mongoose.Schema({
   user: [{type:mongoose.Schema.Types.ObjectId, ref: 'User'}],
   deleted: Boolean
 });
-module.exports = mongoose.model('Adress', adress);
+module.exports = mongoose.model('Address', address);
