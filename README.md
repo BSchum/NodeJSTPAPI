@@ -1,4 +1,4 @@
 # NodeJSTPAPI
 Réalisé par: 
-Romain Foray
-Brice Schumacher
+- Romain Foray
+- Brice Schumacher
